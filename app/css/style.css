@@ -1,0 +1,378 @@
+
+/* ======================================================
+   Global styles
+   ====================================================== */
+
+   section {
+	padding: 50px 10px 100px;
+}
+
+.heading {
+	padding-top: 0px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+.heading2 {
+	padding-bottom: 50px;
+}
+.heading3 {
+	padding-bottom: 50px;
+}
+.heading4 {
+	padding-bottom: 30px;
+}
+
+.desktop-only {
+	display: inline;
+}
+
+.mobile-only {
+	display: none;
+}
+
+/* Navbar */
+
+.navbar-default {
+	margin: 0;
+	background: none;
+	border: none;
+}
+
+
+.navbar-default .navbar-brand, .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+	padding-top: 10px;
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:active, .navbar-default .navbar-nav>li>a:focus {
+	color:white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #0099FF;
+}
+
+
+.navbar-default .navbar-toggle {
+	border-color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: white;
+}
+
+
+/* Buttons */
+
+.btn-lg {
+	margin: 10px;
+	padding: 10px 30px;
+}
+
+.btn-primary {
+	background-color: #0099FF;
+	border: 2px solid #0099FF;
+}
+
+
+.btn-secondary, .btn-secondary:focus {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(237, 237, 237,0.1);
+    color: white;
+}
+
+/* ======================================================
+   Sections
+   ====================================================== */
+
+/* Header */
+
+
+	/* adjust opacity of linear gradient according to background photo */
+
+#header {
+	background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.7)), url("../img/bboard.jpg") no-repeat bottom center;
+	width: 100%;
+	overflow: hidden;
+	background-size: cover;
+	color: white;
+	padding: 0;    
+}
+
+#header-info {
+	padding: 150px 40px;
+}
+
+.section_overlay {
+	background: rgba(58, 58, 58, 0.427); 
+	padding-left: 0px;
+	padding-top: 0px; 
+	padding-right: 0px;
+	padding-bottom: 10px;	
+}
+
+/* Benefits */
+
+
+#benefits .icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    border: 3px solid #0099FF;
+    margin: 0 auto;
+	display: table;
+}
+
+#benefits .icon .fa {
+	font-size: 38px;
+	color: #0099FF;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#benefits .item {
+    padding-bottom: 40px;
+}
+
+#benefits .item p {
+	padding: 0 10px;
+}
+
+#benefits .devices {
+	margin-top: -280px;
+	max-width: 300px;
+}
+
+#benefits .alexa {
+	margin-top: -350px;
+	max-height: 350px;
+}
+
+
+/* Features */
+
+#features {
+	background-color: rgb(238, 238, 238);
+}
+
+#features .item {
+	padding: 10px 10px 0 10px;
+}
+
+#features .item p {
+	background-color: white;
+	padding: 50px;
+	border-top: 0px solid #0099FF;
+	font-size: 18px;
+}
+
+
+/* CTAs */
+
+.cta {
+	margin: 20px;
+	padding: 50px;
+	line-height: 1.5;
+}
+
+.cta h3 {
+	line-height: 1.5;
+	margin:0;
+	padding:15px;
+}
+
+.triangle-isosceles {
+  position: relative;
+}
+
+/* creates triangle */
+.triangle-isosceles:after {
+  content: "";
+  display: block; /* reduce the damage in FF3.0 */
+  position: absolute;
+  top: -15px;
+  width: 0;
+  border-width: 0 15px 15px;
+  border-style: solid;
+}
+
+
+/* Alexa CTA */
+
+
+
+#alexa-skill img {
+	padding-top: 50px;
+}
+
+#alexa-skill .cta {
+	background-color: rgb(238, 238, 238);
+}
+
+#alexa-skill .triangle-isosceles:after {
+  	left: 100px;
+	border-color: rgb(238, 238, 238) transparent;
+}
+
+
+/* Video Section */
+
+.video_area {
+    background-color: rgb(238, 238, 238);
+    padding-bottom: 140px;
+    padding-top: 120px;
+}
+.video_title {
+    padding-bottom: 30px;
+}
+
+
+.video iframe {
+    width: 100%;
+    border: 0px;
+    padding: 0px;
+}
+
+/* Footer */
+
+footer {
+	padding: 30px;
+}
+
+/* ======================================================
+   Mobile styles
+   ====================================================== */
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+	#header-info {
+		padding: 50px 30px;
+	}
+
+	#benefits .devices {
+		margin: -126px auto 0;
+		max-width: 300px;
+		float:none!important;
+
+	}	
+
+	#benefits .alexa {
+		margin: -100px auto 0;
+		max-height: 250px;
+		float:none!important;
+
+	}	
+
+	#benefits .google-home {
+		margin: -107px auto 0;
+		max-width: 250px;
+		float:none!important;
+
+	}	
+
+	.cta {
+		padding-bottom: 30px;
+		margin-top: 50px;
+	}
+
+	.cta h3 {
+		padding-top:0;
+	}
+
+	#alexa-skill img {
+		max-height: 250px;
+		padding-top: 20px;
+	}
+
+	.desktop-only {
+		display: none;
+	}
+
+	.mobile-only {
+		display: inline;
+	}
+}
+
+/*---------------------------------------
+   About us Section              
+-----------------------------------------*/
+
+#owl-demo .item {
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 50px;
+}
+#owl-demo .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.testimonial {
+    background: url(/app/img/alexa2.gif);
+    background-size: cover;
+	background-repeat: no-repeat;
+	padding-left: 0%;
+	padding-right: 0%; 
+	
+
+}
+.testimonial .section_overlay {
+    background: rgba(0, 0, 0, .6);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.carousel-indicators {
+    bottom: -8px;
+}
+div.carousel-inner .item img {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 3px;
+}
+.testimonial_caption {
+    padding-bottom: 70px;
+}
+.testimonial_caption p {
+    color: #D8D8D8;
+    font-size: 18px;
+    line-height: 27px;
+    padding-top: 50px;
+}
+.testimonial_caption h2 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 30px;
+    margin-top: 25px;
+}
+.testimonial_caption h4 {
+    color: white
+}
+.testimonial_caption h4 span {
+    color: #D8D8D8;
+    font-style: italic;
+    font-weight: 300;
+}
+.testimonial ol.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border: 1px solid white;
+    margin: 1PX
+}
+.testimonial ol.carousel-indicators li.active {
+    width: 12px;
+    height: 12px;
+    border: 0px solid white;
+    background: white;
+} 
+
+@media (max-width: 767px) {
+
+	.testimonial {
+		padding: 20px 20px;
+	}
+}
