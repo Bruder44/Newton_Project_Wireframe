@@ -17,8 +17,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 app.use(express.static(path.join(__dirname + '/app/public')));
 
 // Directs server to proper routing files;
-require("./app/routing/htmlRoutes.js")(app);
-
+require("./app/routing/htmlroutes.js")(app);
 
 // PORT LISTENER FUNCTION: "starts" the server and listens for an event
 app.listen(PORT, function() {
